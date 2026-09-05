@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farhan CAD File Store</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #f8fafc; color: #1e293b; padding-bottom: 50px; }
+    
+    /* Header */
+    header { background: #0f172a; color: #ffffff; text-align: center; padding: 35px 20px; }
+    header h1 { font-size: 26px; color: #f59e0b; margin-bottom: 6px; letter-spacing: 0.5px; }
+    header p { font-size: 14px; color: #94a3b8; }
+
+    /* Product Grid */
+    .container { max-width: 1000px; margin: 30px auto; padding: 0 15px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+
+    /* Product Card */
+    .card { background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; flex-direction: column; }
+    .card-img { background: #f1f5f9; width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .card-img img { width: 100%; height: 100%; object-fit: contain; }
+    
+    .card-body { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .card-title { font-size: 17px; font-weight: 700; margin-bottom: 4px; color: #0f172a; }
+    .card-desc { font-size: 13px; color: #64748b; margin-bottom: 12px; }
+    
+    .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
+    .price { font-size: 20px; font-weight: 800; color: #0f172a; }
+    .old-price { font-size: 14px; color: #94a3b8; text-decoration: line-through; }
+    .tag { font-size: 11px; background: #ecfdf5; color: #059669; font-weight: 700; padding: 2px 6px; border-radius: 4px; }
+
+    .btn-buy { display: block; text-align: center; background: #2563eb; color: #ffffff; text-decoration: none; padding: 11px; border-radius: 8px; font-weight: 600; font-size: 14px; transition: 0.2s; }
+    .btn-buy:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FARHAN CAD FILE STORE</h1>
+    <p>3D Jewelry CAD Designs (.STL / .3DM) for Direct Casting & 3D Printing</p>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+
+      <!-- Product 1: Ledis Ring -->
+      <div class="card">
+        <div class="card-img">
+          <!-- রিং এর ছবির ফাইল নাম ring.jpg রাখুন -->
+          <img src="ring.jpg" alt="Ledis Ring CAD STL">
+        </div>
+        <div class="card-body">
+          <div>
+            <h2 class="card-title">Ledis Ring</h2>
+            <p class="card-desc">Casting ready .STL 3D digital file</p>
+          </div>
+          <div>
+            <div class="price-row">
+              <span class="price">₹240</span>
+              <span class="old-price">₹250</span>
+              <span class="tag">4% OFF</span>
+            </div>
+            <a href="https://farhancadfilestore.myinstamojo.com/product/ledis-ring/" target="_blank" class="btn-buy">
+              Buy & Download STL
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- নতুন কোনো ডিজাইন যোগ করতে চাইলে এই পুরো কার্ড কপি করে নিচে বসিয়ে দেবেন -->
+
+    </div>
+  </div>
+
+</body>
+</html>
